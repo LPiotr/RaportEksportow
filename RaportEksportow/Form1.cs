@@ -49,7 +49,7 @@ namespace RaportEksportow
                     // Extension methods - metody rozszerzające
                     var sortedPlaces = places.OrderBy(l => ParseNumber(l)).ToList();
 
-                    comboBox1.DataSource = places;
+                    comboBox1.DataSource = sortedPlaces;
                 }
             }
             catch (SqlException ex)
